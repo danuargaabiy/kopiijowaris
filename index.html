@@ -3,22 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nasi Pecel</title>
+  <title>Kopi Waris</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      background-color: #f5f5f5;
+      background: linear-gradient(to right, #3e2723, #795548, #2e7d32);
       color: #333;
     }
     header {
-      background-color: #2d2d2d;
+      background-color: rgba(45, 45, 45, 0.9);
       color: #fff;
       padding: 20px;
       text-align: center;
     }
     nav {
-      background-color: #444;
+      background-color: rgba(68, 68, 68, 0.9);
       padding: 10px;
       text-align: center;
     }
@@ -55,6 +55,11 @@
       border-radius: 8px;
       text-align: center;
       box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .menu-item:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     }
     .menu-item img {
       max-width: 100%;
@@ -85,7 +90,7 @@
     footer {
       text-align: center;
       padding: 15px;
-      background: #2d2d2d;
+      background: rgba(45, 45, 45, 0.9);
       color: white;
       margin-top: 20px;
     }
@@ -118,17 +123,17 @@ dengan bahan berkualitas dan racikan penuh rasa.</p>
       <h2>Menu Favorit</h2>
       <div class="menu-grid">
         <div class="menu-item">
-          <img src="kopi ijo susu.jpeg" alt="Kopi Susu Gula Aren">
+          <img src="kopi ijo susu.jpeg" alt="Segelas Kopi Ijo Susu khas Tulungagung">
           <h3>Kopi Ijo Susu</h3>
           <p>Rp 4.000 - Kopi khas dengan rasa otentik.</p>
-        </div>
+        </div> 
         <div class="menu-item">
-          <img src="nasi pecel.jpeg" alt="Cappuccino">
+          <img src="nasi pecel.jpeg" alt="Seporsi Nasi Pecel khas Tulungagung">
           <h3>Nasi Pecel</h3>
           <p>Rp 6.000 - Nasi dengan sambel pecel cocok untuk sarapan.</p>
         </div>
         <div class="menu-item">
-          <img src="bubuk kopi.jpg" alt="Mocha">
+          <img src="bubuk kopi.jpg" alt="Bubuk Kopi Ijo kiloan">
           <h3>Bubuk kopi ijo</h3>
           <p>Rp 5.000 - Rp 50.000 - Bubuk kopi ijo.</p>
         </div>
@@ -139,28 +144,11 @@ dengan bahan berkualitas dan racikan penuh rasa.</p>
       <h2>Order Sekarang</h2>
       <form onsubmit="alert('Terima kasih, pesanan Anda sudah diterima!'); return false;">
         <input type="text" name="nama" placeholder="Nama Anda" required>
-        <input type="text" name="telepon" placeholder="Nomor Telepon" required>
+        <input type="tel" name="telepon" placeholder="Nomor Telepon" required pattern="[0-9]{10,13}">
         <select name="menu" required>
           <option value="">Pilih Menu</option>
           <option value="kopi_ijo_susu">Kopi Ijo Susu</option>
           <option value="nasi_pecel">Nasi Pecel</option>
           <option value="bubuk_kiloan">Bubuk Kiloan</option>
         </select>
-        <textarea name="alamat" rows="3" placeholder="Alamat Pengantaran" required></textarea>
-        <button type="submit">Kirim Pesanan</button>
-      </form>
-    </section>
-
-    <section id="kontak">
-      <h2>Kontak Kami</h2>
-      <p>Alamat: Jl. Raya Kalangbret No.18,Tulungagung</p>
-      <p>Telepon: 0812-3456-7890</p>
-      <p>Instagram: @kopiijowaris</p>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Kopi Ijo Waris</p>
-  </footer>
-</body>
-</html>
+        <textarea name="alamat" rows="3" placeholder="Alamat Pengantaran" r
