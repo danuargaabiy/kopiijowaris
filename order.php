@@ -3,7 +3,7 @@
 $host = "localhost";
 $user = "root";      // ganti sesuai user MySQL
 $pass = "abiy";          // ganti sesuai password MySQL
-$db   = "mompopcafe";
+$db   = "KOPIIJOWARIS";
 
 // Koneksi ke database
 $conn = new mysqli($host, $user, $pass, $db);
@@ -46,5 +46,6 @@ if ($conn->query($sql) === TRUE) {
 
 $conn->close();
 ?>
+
 
 
