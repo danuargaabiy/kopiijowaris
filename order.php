@@ -2,7 +2,7 @@
 // Konfigurasi database
 $host = "localhost";
 $user = "root";      // ganti sesuai user MySQL
-$pass = "";          // ganti sesuai password MySQL
+$pass = "abiy";          // ganti sesuai password MySQL
 $db   = "mompopcafe";
 
 // Koneksi ke database
@@ -46,4 +46,5 @@ if ($conn->query($sql) === TRUE) {
 
 $conn->close();
 ?>
+
 
